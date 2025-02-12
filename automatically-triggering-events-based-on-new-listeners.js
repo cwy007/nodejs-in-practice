@@ -28,9 +28,20 @@ Pulsar.prototype.start = function() {
   }, this.speed);
 };
 
+// Stop the pulse if no listeners are added to the 'pulse' event.
+Pulsar.prototype.stop = function() {
+  // Check if there are any listeners for the 'pulse' event.
+  if (this.listeners('pulse').length === 0) {
+    throw new Error('No listeners have been added');
+  }
+}
+
 var pulsar = new Pulsar(500, 5);
 
+
 // Display a dot on each pulse
-pulsar.on('pulse', function() {
-  console.log('.');
-});
+// pulsar.on('pulse', function() {
+//   console.log('.');
+// });
+
+pulsar.stop(); // Throws an error
