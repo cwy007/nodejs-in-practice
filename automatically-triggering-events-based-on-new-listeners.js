@@ -3,12 +3,14 @@ var events = require('events')
 
 function Pulsar(speed, times) {
   events.EventEmitter.call(this);
-  var self = this;
+
+  var self = this; // Store the context of the Pulsar object.
   this.speed = speed;
   this.times = times;
+
   this.on('newListener', function(name, listener) {
     if (name === 'pulse') {
-      self.start();
+      self.start(); // Start the pulse if an event listener is added to the 'pulse' event.
     }
   });
 }
@@ -16,7 +18,8 @@ function Pulsar(speed, times) {
 util.inherits(Pulsar, events.EventEmitter);
 
 Pulsar.prototype.start = function() {
-  var self = this;
+  var self = this; // Store the context of the Pulsar object.
+
   var id = setInterval(function() {
     self.emit('pulse');
     if (--self.times === 0) {
