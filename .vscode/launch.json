@@ -4,10 +4,11 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/src/benchmarking-streams.js",
+      "program": "${workspaceFolder}/src/using-istty-to-adapt-stream-behavior.js",
       "internalConsoleOptions": "neverOpen"
     }
   ]
 }
 // /src/a-json-line-parser.js
 // src/benchmarking-streams.js
+// src/using-istty-to-adapt-stream-behavior.js
