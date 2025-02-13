@@ -11,6 +11,7 @@ function StatStream(limit) {
   this.limit = limit;
 }
 
+// Inherit from the Readable stream
 util.inherits(StatStream, stream.Readable);
 
 // Implement the _read method to push data to the read queue
@@ -29,6 +30,7 @@ StatStream.prototype._read = function(size) {
 // Create an Express application that uses the StatStream
 app.get('/', function(req, res) {
   var statStream = new StatStream(10);
+  // Pipe the stream to the response
   statStream.pipe(res);
 });
 
