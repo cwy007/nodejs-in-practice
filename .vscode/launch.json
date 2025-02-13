@@ -4,9 +4,10 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/src/a-json-line-parser.js",
+      "program": "${workspaceFolder}/src/benchmarking-streams.js",
       "internalConsoleOptions": "neverOpen"
     }
   ]
 }
 // /src/a-json-line-parser.js
+// src/benchmarking-streams.js
