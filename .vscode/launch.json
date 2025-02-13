@@ -4,8 +4,9 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/event-based-errors.js",
+      "program": "${workspaceFolder}/src/a-json-line-parser.js",
       "internalConsoleOptions": "neverOpen"
     }
   ]
 }
+// /src/a-json-line-parser.js
