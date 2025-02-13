@@ -15,10 +15,14 @@ function benchStream(inSize, outSize) {
     }
   }, 50);
 
-  var diff = process.hrtime(time);
   input.on('end', function() {
+    // rss is the resident set size, the amount of space occupied in the main memory device (RAM)
     var memoryEnd = process.memoryUsage().rss;
     clearInterval(memoryCheck);
+
+    // diff[0] is seconds, diff[1] is nanoseconds
+    // hrtime returns the elapsed time since an arbitrary point in time
+    var diff = process.hrtime(time);
     console.log([
       inSize,
       outSize,
