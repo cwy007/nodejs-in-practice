@@ -4,7 +4,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/src/using-istty-to-adapt-stream-behavior.js",
+      "program": "${workspaceFolder}/src/root/test.js",
       "internalConsoleOptions": "neverOpen"
     }
   ]
@@ -12,3 +12,4 @@
 // /src/a-json-line-parser.js
 // src/benchmarking-streams.js
 // src/using-istty-to-adapt-stream-behavior.js
+// src/root/test.js
