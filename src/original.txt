@@ -1,0 +1,2 @@
+ ➜  first-project git:(main) ✗ touch src/copying-a-file-using-stream.js
+ ➜  first-project git:(main) ✗ touch src/original.txt
