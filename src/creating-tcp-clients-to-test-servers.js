@@ -32,6 +32,16 @@ server.listen(8000, function() {
 });
 
 function runTest(expectedid, done) {
+  // create a client
+  // connect to the server
+  // listen for data
+  // check the data
+  // close the client
+  // call done
+  // decrement expectedAssertions
+  // if expectedAssertions is 0, call done
+  // close the server
+  // run the tests
   var client = net.connect(8000);
 
   client.on('data', function(data) {
