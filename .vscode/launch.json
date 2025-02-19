@@ -4,7 +4,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/src/root/test.js",
+      "program": "${workspaceFolder}/src/udp-client-server-applications.js",
       "internalConsoleOptions": "neverOpen"
     }
   ]
@@ -13,3 +13,4 @@
 // src/benchmarking-streams.js
 // src/using-istty-to-adapt-stream-behavior.js
 // src/root/test.js
+// src/udp-client-server-applications.js
